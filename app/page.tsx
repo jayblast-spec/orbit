@@ -119,7 +119,7 @@ export default function HomePage() {
             </Link>
             <Link
               href="/schedule"
-              className="rounded-full bg-white px-5 py-2 text-[13px] font-black text-black hover:bg-white/90 transition-colors"
+              className="rounded-full bg-white px-5 py-2 text-[13px] font-black text-[#000] hover:bg-white/90 transition-colors"
             >
               Start free →
             </Link>
@@ -193,7 +193,7 @@ export default function HomePage() {
           >
             <Link
               href="/schedule"
-              className="w-full sm:w-auto rounded-full bg-white px-8 py-3.5 text-[14px] font-black text-black hover:bg-white/90 transition-all shadow-xl shadow-white/10"
+              className="w-full sm:w-auto rounded-full bg-white px-8 py-3.5 text-[14px] font-black text-[#000] hover:bg-white/90 transition-all shadow-xl shadow-white/10"
             >
               Open Orbit free →
             </Link>
@@ -348,7 +348,7 @@ export default function HomePage() {
               <button
                 onClick={getInsight}
                 disabled={loading || !input.trim()}
-                className="rounded-full bg-white px-5 py-2 text-[12px] font-black text-black disabled:opacity-30 hover:bg-white/90 transition-all"
+                className="rounded-full bg-white px-5 py-2 text-[12px] font-black text-[#000] disabled:opacity-30 hover:bg-white/90 transition-all"
               >
                 {loading ? 'Thinking…' : 'Ask Orbit AI →'}
               </button>
@@ -390,7 +390,7 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
               <Link
                 href="/schedule"
-                className="w-full sm:w-auto rounded-full bg-white px-10 py-4 text-[15px] font-black text-black hover:bg-white/90 transition-all shadow-2xl shadow-white/10"
+                className="w-full sm:w-auto rounded-full bg-white px-10 py-4 text-[15px] font-black text-[#000] hover:bg-white/90 transition-all shadow-2xl shadow-white/10"
               >
                 Open Orbit free →
               </Link>
