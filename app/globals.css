@@ -27,3 +27,9 @@ a {
 button, textarea {
   font: inherit;
 }
+
+/* Orbit identity: orbital violet + telemetry teal. */
+body { background-image: radial-gradient(circle at 50% -10%, rgba(124,58,237,.24), transparent 36%), radial-gradient(circle at 92% 25%, rgba(20,184,166,.14), transparent 30%); background-attachment: fixed; }
+article, [class*="rounded-"] { transition: border-color .2s ease, transform .2s ease, background-color .2s ease; }
+article:hover { border-color: rgba(45,212,191,.36); transform: translateY(-2px); }
+button:focus-visible, a:focus-visible, textarea:focus-visible { outline: 2px solid #2dd4bf; outline-offset: 3px; }
