@@ -42,6 +42,16 @@ Orbit bundles four founder-facing modules behind one shell:
 - `app/api/insights/route.ts` calls `https://api.groq.com/openai/v1/chat/completions` with `GROQ_API_KEY` and returns a graceful fallback message ("AI is temporarily unavailable") if the key is missing or the call fails
 - No database in this repo — the four modules (`/schedule`, `/analytics`, `/publish`, `/automate`) are routed as product surfaces from the marketing shell
 
+## Engineering Notes
+
+**The real problem:** before building real integrations against four separate external APIs (calendar, analytics, social publishing, automation), it's worth proving the *shell* — can one coherent UI actually hold all four without feeling bolted together?
+
+**The approach:** `/schedule` persists real interactive state to `localStorage` (add/edit events, a real week view) so the module is genuinely usable today, not a static mockup — but it's local-only, not synced to Google Calendar or any real calendar provider yet. `/analytics`, `/publish`, and `/automate` are UI surfaces for the same shell, not yet backed by real external APIs.
+
+**One real number:** only `/api/insights` calls a real external service (Groq) — the other three modules currently have zero server-side API routes between them.
+
+**Not handled yet:** this is honestly a UI/UX prototype of the operating-layer vision, not yet the real thing — no calendar sync, no real social publishing, no automation execution engine. The insights co-pilot is the one piece with a real backend today.
+
 ## Live
 
 https://orbit-alpha-nine.vercel.app
