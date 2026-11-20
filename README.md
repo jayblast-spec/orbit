@@ -7,7 +7,6 @@
 Orbit is a free, open-source founder platform that unifies four tools founders normally juggle separately — scheduling, analytics, content publishing, and no-code automation — into one Next.js dashboard. Its `/api/insights` route calls Groq's chat completions API to generate live AI insight text for the analytics module.
 
 <p>
-  <a href="https://orbit-alpha-nine.vercel.app"><img alt="Live Demo" src="https://img.shields.io/badge/Live-Demo-1D4ED8?style=for-the-badge&logo=vercel&logoColor=white"></a>
   <a href="https://github.com/jayblast-spec/orbit"><img alt="GitHub Repo" src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white"></a>
 </p>
 
@@ -54,7 +53,7 @@ Orbit bundles four founder-facing modules behind one shell:
 
 ## Live
 
-https://orbit-alpha-nine.vercel.app
+*(demo temporarily offline)*
 
 ## Tech Stack
 
